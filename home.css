@@ -23,10 +23,14 @@ body{
    box-sizing: border-box;
    text-align: center;
    outline: 3px solid rgb(247, 238, 238);
+   position: fixed;
+   z-index: 1;
+   
    
   
 
 }
+
 
 #main{
    min-height: calc(100vh-100px);
@@ -44,6 +48,7 @@ body{
    padding: 18px;
    width: 90%;
    box-sizing: border-box;
+   
   
    
    
@@ -56,10 +61,11 @@ a:hover {
   
 }
 
-
+/* homepage */
 .subheading{
    font-size: 30px;
    font-family: cursive;
+   margin-top: 150px;
 }
 
 #subheading-para{
@@ -77,6 +83,7 @@ figure{
 
 img{
    border: 3px dashed rgb(14, 40, 65) ;
+   margin-top: 100px;
 }
 
 figure:hover{
@@ -128,3 +135,6 @@ footer{
    background-color: rgb(215, 220, 233);
    border: 5px solid  rgb(14, 40, 65);
 }
+
+
+/* profile-page */
