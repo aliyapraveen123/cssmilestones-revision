@@ -1,0 +1,26 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+
+#Grid-Container {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 10px;
+   border: 10px solid rgb(64, 60, 60);
+   
+}
+
+figure img {
+   width: 100%;
+   object-fit: cover;
+   height:300px;
+}
+
+figure{
+   border: 2px solid  rgb(86, 86, 91);
+   box-shadow: 1px 1px 1px 1px grey;
+}

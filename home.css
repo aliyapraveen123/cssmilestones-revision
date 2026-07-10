@@ -7,6 +7,8 @@
 body{
    background-color: rgb(208, 234, 234);
    line-height: 1.5;
+   
+   
 
 }
 
@@ -16,43 +18,39 @@ body{
    font-size: 25px;
    font-family: monospace;
    width: 100%;
-   padding: 0px;
+   padding: 20px;
    border: 2px solid rgb(249, 249, 249);
    margin: 0px;
-   height: 200px;
+   min-height: 200px;
    box-sizing: border-box;
    text-align: center;
    outline: 3px solid rgb(247, 238, 238);
    position: fixed;
    z-index: 1;
    
-   
-  
-
 }
 
 
 #main{
-   min-height: calc(100vh-100px);
-   width: 1500px;
+   min-height: calc(100vh - 100px);
+   padding-top: 200px;
    
 }
 
 #navigation-bar {
-   border: 5px solid  rgb(9, 36, 61);
    background-color: rgb(235, 237, 243);
-   margin-left: 70px;
+   margin: 20px auto;
    font-size: 20px;
-   height: 10px;
-   line-height: 10px;
    padding: 18px;
    width: 90%;
+   max-width: 1200px;
+   border: 10px solid rgb(13, 31, 89);
+   outline: 2px dashed white;
+   border-radius: 20px;
    box-sizing: border-box;
    
-  
-   
-   
 }
+
 
 
 a:hover {
@@ -62,10 +60,15 @@ a:hover {
 }
 
 /* homepage */
+
+.container{
+   width: 98%;
+   max-width: 1200px;
+   margin: auto;
+}
 .subheading{
    font-size: 30px;
    font-family: cursive;
-   margin-top: 150px;
 }
 
 #subheading-para{
@@ -74,19 +77,20 @@ a:hover {
 }
 
 figure{
-   opacity: 0.;
-   position: relative;
-   left: 450px;
+  text-align: center;
    
   
 }
 
 img{
    border: 3px dashed rgb(14, 40, 65) ;
-   margin-top: 100px;
+   opacity: 0.8;
+   max-width: 100%;
+   height: auto;
+
 }
 
-figure:hover{
+img:hover{
    opacity: 1.0;
 }
 
@@ -108,33 +112,48 @@ figcaption{
 footer{
    background-color:rgb(14, 40, 65);
    width: 100%;
-   height: 30px;
+   height: 60px;
    text-align: center;
    color: white;
    font-weight: 900;
+   
   
 }
 
 #welcome{
-   padding: 10px;
+   padding: 30px;
    background-color: rgb(215, 220, 233);
    border: 5px solid  rgb(14, 40, 65);
-   text-align: justify;
+   margin-bottom: 25px;
+   margin-top: 100px;
+   width: 100%;
+   border-radius: 20px;
+   box-sizing:border-box;
+   
+
 
 }
 
 
 #key-features{
-   padding: 10px;
+   padding:30px;
    background-color: rgb(235, 237, 243);
    border: 5px solid  rgb(14, 40, 65);
+   margin-bottom: 25px;
+   width: 100%;
+   border-radius: 20px;
+   box-sizing:border-box;
 }
 
 #use-portal{
-   padding: 10px;
+   padding: 30px;
    background-color: rgb(215, 220, 233);
    border: 5px solid  rgb(14, 40, 65);
+   margin-bottom: 25px;
+   width: 100%;
+   border-radius: 20px;
+   box-sizing:border-box;
 }
 
 
-/* profile-page */
+
