@@ -1,0 +1,186 @@
+* {
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(navbar2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 91, 74);
+    border: 2px solid black;
+    color: white;
+    width: 100%;
+    gap: 10px;
+    font-size: 2.3rem;
+    margin-top: 150px;
+    
+}
+
+#navigation-bar{
+    display: flex;
+    background-color: rgb(219, 228, 196);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    box-sizing: border-box;
+    top: 20px;
+    left:0;
+    right: 0;
+    border-radius: 20px;
+    
+}
+
+.ul-type{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  15px;
+    justify-content: center;
+    align-items: center;
+  
+  
+
+}
+
+.ul-type li {
+    border: 3px solid rgb(36, 13, 98);
+    border-radius: 5px;
+    padding: 8px 12px;
+    overflow: hidden;
+    border: 2px solid white ;
+    box-shadow: 3px 5px rgb(55, 122, 69);
+    box-sizing: border-box;   
+    background-color: rgb(9, 55, 9);
+}
+
+.ul-type a {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+
+
+body{
+    color:white;
+    font-size:  1.5rem;
+
+}
+
+/* table-1 design  */
+#table-1{
+    border-collapse: collapse;
+    outline: 4px solid white;
+    margin: 20px;
+    box-shadow: 10px 6px 10px #ffffff;
+    background-color: rgb(219, 228, 196);
+    width: 50%;
+    line-height: 40px;
+    box-sizing: border-box;
+
+}
+
+#table-1 caption {
+    caption-side: top;
+    text-transform: capitalize;
+    font-size: 2rem;
+   
+
+}
+
+#table-1 td{
+    border: 5px solid rgb(8, 53, 8);
+    outline: 2px solid white;
+    border-radius: 3px;
+    color: black;
+
+}
+
+#table-1 th {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(16, 93, 66);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+#table-1 thead tr {
+    border-bottom:8px solid rgb(0, 0, 0);
+}
+
+/* table 2 design  */
+#table-2 {
+    border-collapse: collapse;
+    outline: 4px solid white;
+    margin: 20px;
+    box-shadow: 10px 6px 10px #ffffff;
+    background-color: rgb(219, 228, 196);
+    width: 50%;
+    table-layout: fixed;
+    box-sizing: border-box;
+   
+}
+
+#table-2 td{
+    border: 5px solid rgb(8, 53, 8);
+    outline: 2px solid white;
+    border-radius: 3px;
+    color: black;
+    text-align: center;
+    width: 60%
+    
+
+}
+
+#table-2 th {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(16, 93, 66);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 40%;
+    word-wrap: break-word;
+    text-align: left;
+    
+}
+
+
+
+
+
+
+footer {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(219, 228, 196);
+    color: rgb(5, 5, 5);
+}
+
+
+@media (max-width: 768px){
+    #header{
+        font-size: 1.5rem;
+        padding-top: 80px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    #table-1,
+    #table-2{
+        width: 95%;
+        margin:10px auto;
+    }
+}

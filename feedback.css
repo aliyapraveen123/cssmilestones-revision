@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(navbar2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 82, 80);
+    color: white;
+    width: 100%;
+    gap: 10px;
+    font-size: 2.3rem;
+    box-sizing: border-box;
+    padding:120px 20px 30px;
+
+}
+
+#navigation-bar{
+    display: flex;
+    background-color: rgb(219, 228, 196);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: fixed;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    
+}
+
+.ul-type{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:  15px;
+    justify-content: center;
+    align-items: center;
+  
+  
+
+}
+
+.ul-type li {
+    border: 3px solid rgb(36, 13, 98);
+    border-radius: 5px;
+    padding: 8px 12px;
+    overflow: hidden;
+    border: 2px solid white ;
+    box-shadow: 3px 5px rgb(55, 122, 69);
+    box-sizing: border-box;   
+    background-color: rgb(9, 55, 9);
+}
+
+.ul-type a {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+main{
+     min-height: calc(100vh - 100px);
+     padding-top:  20px;
+}
+
+body{
+    color:white;
+    font-size:  1.5rem;
+}
+
+#Name,
+#Student-id,
+#Email,
+#Course,
+#Feedback-message
+{
+  margin: 20px;
+  display: block;
+  border: 7px solid rgb(2, 15, 12);
+  border-radius: 20px;
+  outline: 2px dashed white;
+}
+
+.rating-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.rating-option{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating-option label{
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 40%;
+    padding:10px;
+    box-sizing:border-box;
+    font-size:16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+    background-color: rgb(183, 221, 183);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    background-color: rgb(218, 230, 213);
+}
+
+#Feedback-message{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.t-c-grp{
+   display: flex;
+   flex-direction: column;
+   padding-top: 10px;
+   gap: 10px;
+   margin: 20px;
+}
+
+.t-c-opt{
+    display: flex;
+    align-items: center;
+
+}
+
+.t-c-opt label {
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: rgb(5, 40, 5);
+    color: white;
+    box-shadow: 2px 3px 10px white;
+    border-radius: 10px;;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(219, 228, 196);
+    color: rgb(5, 5, 5);
+    padding: 10px;
+}

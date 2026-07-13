@@ -3,27 +3,28 @@
     <head>
         <meta charset="UTF_8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Course</title>
+        <title>Grades-Table</title>
+        <link rel="stylesheet" href="gradestable.css">
     </head>
     <body>
-        <header>
-            <h1><u><mark>Grades-Table</mark></u></h1>
-        </header>
+        <nav id="navigation-bar">
+              <ul class="ul-type">
+                <li><a href="home.html">🏠Home </a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li> <a href="gradestable.html">Grades Table</a></li>
+                <li><a href="Contact-us.html">Contact-Us</a></li>
+              </ul>   
+            </nav>
 
-        <nav>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="gradestable.html">Grades Table</a></li>
-            <li><a href="Contact-us.html">Contact-Us</a></li>          
-          </ul>   
-        </nav>
+        <header id="header">
+            <h1>Grades-Table</h1>
+        </header>
         
-        <main id="Grades-table">
-          <table border="10">
-            <caption> student report</caption>
+       
+          <table id="table-1">
+            <caption> student's report</caption>
             <thead>
               <tr>
                 <th>Subject</th>
@@ -81,9 +82,9 @@
                 <td>18</td>
               </tr>
             </tfoot>
-          </table><br><br>
+          </table>
 
-          <table border="5">
+          <table id="table-2">
               <tr>
                 <th>Total Credits</th>
                 <td>18</td>
@@ -106,10 +107,23 @@
               
             
           </table>
-        </main><br>
+        <footer id="footer">
 
-        <footer>
-                  <small>🌐 By Alia</small>
+            <h3>Student Profile & Course Portal</h3>
+
+            <p>Designed to help students manage their academic information, courses, grades, and feedback efficiently.</p>
+
+            <p>
+                <strong>Developed by:</strong> Aliya Parveen
+            </p>
+
+
+            <p>
+                <strong>Department:</strong> Bachelor of Computer Applications (BCA)
+            </p>
+
+            <p>&copy; 2026 Student Profile & Course Portal. All Rights Reserved.</p>
+
         </footer>
     </body>
 </html>        
