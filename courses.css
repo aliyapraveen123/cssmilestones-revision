@@ -8,6 +8,7 @@
 main{
     min-height: calc(100vh - 130px - 60px);
     padding-top: 130px;
+    box-sizing: border-box;
 }
 
 #heading{
@@ -18,17 +19,17 @@ main{
     background-color: #4a4a4a;
     width: 100%;
     color: rgb(255, 255, 255);
-    height: 70px;
+    height: 80px;
 }
 
 #navbar {
     width: 100%;
     padding: 15px;
-    height: 60px;
     background-color:  #6D8196;
     position: fixed;
-    top: 70px;
+    top: 80px;
     left: 0;
+    min-height: 70px;
 }
 
 #navbar ul{
@@ -37,7 +38,6 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
 
     list-style: none;
     padding: 0;
@@ -47,15 +47,18 @@ main{
 
 #navbar li {
      background-color: #ffffe3;
-     flex: 0 1 120px;
+     flex: 1 1 130px;
      text-align: center;
      border: 4px solid #4a4a4a;
      border-radius: 20px;
      font-size: 1.2rem;
      box-shadow: 2px 3px 10px  rgb(238, 238, 238);
+     padding: 4px 10px;
 }
 
 #navbar a {
+    display: block;
+    padding: 5px 0;
     color: rgb(0, 0, 0);
 }
 
@@ -73,7 +76,7 @@ main{
     width: clamp(300px,90%, 1600px);
     padding: 10px;
     background-color: #ffffe3;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     box-shadow: 10px 10px 10px #6D8196;
 
 }
@@ -91,6 +94,10 @@ main{
     
 }
 
+#Introduction p {
+    font-size: clamp(0.6rem, 4vw, 1.2rem);
+}
+
 #details-about-Courses{
     display: flex;
     flex-direction: column;
@@ -100,7 +107,7 @@ main{
     width: clamp(300px,90%, 1600px);
     padding: 10px;
     background-color: #ffffe3;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     box-shadow: 10px 10px 10px #6D8196;
     line-height: 30px;
 
@@ -119,6 +126,17 @@ main{
     border-radius: 10px;
 }
 
+#details-about-Courses dl {
+    font-size: clamp(0.6rem, 4vw, 1.2rem);
+}
+
+#details-about-Courses dt{
+    color: #0b3a6b;
+    font-weight: 600;
+}
+
+
+
 #Important-Note{
     display: flex;
     flex-direction: column;
@@ -128,10 +146,15 @@ main{
     width: clamp(300px,90%, 1600px);
     padding: 10px;
     background-color: #ffffe3;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     box-shadow: 10px 10px 10px #6D8196;
+    color: rgb(225, 54, 54);
 
 
+}
+
+#Important-Note blockquote{
+     font-size: clamp(0.6rem, 4vw, 1.2rem);
 }
 
 strong{
@@ -154,7 +177,7 @@ strong{
     width: clamp(300px,90%, 1600px);
     padding: 10px;
     background-color: #ffffe3;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     box-shadow: 10px 10px 10px #6D8196;
    
 }
@@ -169,4 +192,43 @@ strong{
     word-wrap: break-word;
     border: 4px solid #6D8196;
     border-radius: 10px;
+}
+
+#Contact address{
+    font-size: clamp(0.6rem, 4vw, 1.2rem);
+}
+
+footer{
+    background-color: #4a4a4a;
+    color: white;
+    height: 100px;
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 2rem);
+}
+
+@media(max-width:400px){
+    #navbar{
+        position: static;
+        min-height: auto;
+    }
+
+    main{
+        padding-top: 0;
+    }
+
+    #heading{
+        height:70px;
+        font-size:2.2rem;
+    }
+
+    #navbar li{
+        flex: 1 1 130px;
+    }
+
+}
+
+@media(max-width: 480px){
+   main{
+    padding-top: 180px;
+   }
 }
