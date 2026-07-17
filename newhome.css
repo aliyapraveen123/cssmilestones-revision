@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E0E1DD;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D1B2A;
+    height: 90px;
+    width: 100%;   
+    position: sticky;  
+    top: 0;
+    z-index: 1;
+}
+
+header h1{
+    justify-content: flex-start;
+    color: aliceblue;
+    font-size: clamp(2rem, 4vw, 3rem);
+    padding-left: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 30px;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+nav a {
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.7rem);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    flex: 1;
+    padding-top:20px;
+    font-size: clamp(1rem, 4vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+section{
+    border: 4px solid #1b263b;
+    width: min(2300px, 90%);
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(243, 242, 241);  
+    box-shadow: 6px 6px 7px #1b263b;
+    border-radius: 15px;
+}
+
+section h2{
+    color: #0D1B2A
+}
+section p,
+section ul
+{
+   text-align: justify;
+   line-height: 4rem;;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+
+#key-features ul{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 2fr) );
+   height: 500px;
+   text-align: center;
+   gap: 20px;
+
+}
+
+
+
+#key-features li{
+       display: flex;
+       justify-content: flex-end;
+       flex-direction: column;
+       border: 7px solid #e0e1dd;
+       box-shadow: 6px 6px 10px #778da9;
+}
+
+
+#key-features img{
+    height: 100px;
+    object-fit: contain;
+    position: center;
+}
+
+.fig-icon{
+   
+}
+
+footer{
+    background-color: #0D1B2A;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+
+@media(max-width:768px){
+   
+    header{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding: 20px 0;
+
+    }
+
+    header h1{
+        padding-left: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding-right: 0;
+    }
+
+    section{
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
