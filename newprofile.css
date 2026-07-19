@@ -76,36 +76,20 @@ section{
     border-radius: 15px;
 }
 
-section h2{
-    color: #0D1B2A;
-    font-size: clamp(2rem, 4vw, 4.2rem);
-    font-family:cursive;
-    text-shadow: 2px 3px 8px #b1c3db;
-}
-section p{
-    text-align: justify;
-}
-section p,
-section ul{
-    line-height:1.8;
-}
-
-section ul {
-    list-style-type: none;
-}
-
 figure{
     width: 100%;
     margin: 20px 0;
 }
 
 figure img{
-    width: 100%;
+    object-fit: cover;
     max-width: 700px;
-    height: auto;
+    height: 400px;
     display: block;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 40%;
+    /* border: 10px solid #778da9; */
+
 }
 
 figcaption{
@@ -113,83 +97,9 @@ figcaption{
     font-size: clamp(.9rem,2vw,1.2rem);
 }
 
-/* 
-#key-features ul{
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 2fr) );
-   height: 500px;
-   text-align: center;
-   gap: 40px;
-   justify-content: center;
-   align-items: center;
-
-} */
-
-#Key-Features-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-#key-features li{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    width:300px;
-    min-height:250px;
-
-    padding:20px;
-    
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    border:3px solid #e0e1dd;
-    box-shadow:6px 6px 10px #84736f;
-    border-radius:15px;
-
-    font-size:clamp(1rem,3vw,2rem);
-}
-
-#one{
-    background-color: #0d1b2a;
-    color: white;
-    font-weight: 900;
-}
-
-#two{
-    background-color: #415a77;
-    color: white;
-    font-weight: 900;
-}
-
-#three{
-    background-color: #1b263b;
-    color: white;
-    font-weight: 900;
-}
-
-#four{
-    background-color: #415a77;
-    color: white;
-    font-weight: 900;
-}
-
-#five{
-    background-color: #1b263b;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-}
-
-#six{
-    background-color: #0d1b2a;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-}
 
 
+/*footer*/
 footer{
     background-color: #0D1B2A;
     padding: 20px;
@@ -198,17 +108,7 @@ footer{
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-@media (max-width:992px){
 
-    #Key-Features-list{
-        gap:25px;
-    }
-
-    #key-features li{
-        width:45%;
-    }
-
-}
 
 @media(max-width:768px){
    
@@ -250,22 +150,10 @@ footer{
         font-size:1rem;
         line-height:1.6;
     }
-
-    #Key-Features-list{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    #key-features li{
-        width:100%;
-        min-height:200px;
-        margin:0;
-    }
-
+    
     figure img{
         width:100%;
     }
-
 }
 
 @media (max-width:480px){
@@ -282,10 +170,10 @@ footer{
         font-size:1.5rem;
     }
 
-    #key-features li{
+    /* #key-features li{
         min-height:180px;
         font-size:1rem;
-    }
+    } */
 
     footer{
         font-size:1rem;
