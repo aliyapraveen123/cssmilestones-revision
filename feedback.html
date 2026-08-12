@@ -4,27 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Feedback</title>
-        <link rel="stylesheet" href="feedback.css">
+        <link rel="stylesheet" href="newfeedback.css">
     </head>
     <body>
-            <nav id="navigation-bar">
-              <ul class="ul-type">
-                <li><a href="home.html">🏠Home </a></li>
+        <header id="header">
+            <h1>Feedback Page</h1>
+
+            <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li> <a href="gradestable.html">Grades Table</a></li>
-                <li><a href="Contact-us.html">Contact-Us</a></li>
-              </ul>   
-            </nav>
+                <li><a href="gradestable.html">Grades Table</a></li>
+                <li><a href="Contact-us.html">Contact-Us</a></li> 
+            </ul>
+        </nav>
 
-        <header id="header">
-            <h1>Give Feedback</h1>
         </header>
     <main>
        <form>
            <label for="Name">Name:</label>
-           <input type="text" id="Name" name="Name" placeholder="enter your name" required>
+           <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
 
            <label for="Student-id">Student Id:</label>
            <input type="text" id="Student-id" name="Student-id" placeholder="Enter the id" required>
@@ -83,22 +84,22 @@
                 <label for="terms1">I agree to the terms and conditions.</label>
             </div>
 
-            <div t-c-opt>
+            <div class="t-c-opt">
                 <input type="checkbox" id="terms2" class="terms">
                 <label for="terms2">I confirm that the information provided is correct.</label>
             </div>
 
-            <div t-c-opt>
+            <div class="t-c-opt">
                 <input type="checkbox" id="terms3" class="terms">
                 <label for="terms3">I would like to receive portal updates and notifications.</label>
             </div>
 
-            <div t-c-opt>
+            <div class="t-c-opt">
                 <input type="checkbox" id="terms4" class="terms">
                 <label for="terms4">I agree to submit my feedback for review.</label>
             </div>
 
-            <div t-c-opt>
+            <div class="t-c-opt">
                 <input type="checkbox" id="terms5" class="terms">
                 <label for="terms5">I recommend this portal to other students.</label>
             </div>

@@ -62,7 +62,6 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
    
 }
 
@@ -77,89 +76,46 @@ section{
     border-radius: 15px;
 }
 
-/* figure style */
-
-figure img{
-    max-width: 500px;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3 ease;
-    box-shadow: 5px 5px 20px #0D1B2A;
-    height:400px;
-    width:300px;
-    object-fit: cover;
-    border-radius: 50px;
-} 
-
-figure img:hover{
-    transform: translateY(-3px);
-  
+section h2{
+    color: #0D1B2A;
+    font-size: clamp(2rem, 4vw, 4.2rem);
+    font-family:cursive;
+    text-shadow: 2px 3px 8px #b1c3db;
 }
-
-figcaption{
-    margin-top: 10px;
-    font-size: clamp(1.5rem, 2vw, 1rem);
-}
-
-/* Student's data design */
-#Students-Data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#Students-Data table{
-    gap: 10px;  
-    width: 40%;
-    box-shadow: 8px 7px 10px rgb(55, 6, 6);
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 3px solid rgb(141, 24, 24);
-}
-
-#Students-Data th{
-  
-   text-align: center;
-   padding: 10px;
-   
-}
-
-#Students-Data td{
+section p{
     text-align: justify;
-    padding: 10px;   
+}
+section p,
+section ul{
+    line-height:1.8;
 }
 
-
-/* skill section design */
-#Skills ul{
+section ul {
     list-style-type: none;
 }
 
-#About-Me p{
-    text-align: justify;
-}
 
-#Contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-#Contact a{
-    color: rgb(141, 24, 24);
-    font-weight: 600;
-}
 
-/*footer*/
+
 footer{
     background-color: #0D1B2A;
     padding: 20px;
     color: white;
     text-align: center;
     font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+@media (max-width:992px){
+
+    #Key-Features-list{
+        gap:25px;
+    }
+
+    #key-features li{
+        width:45%;
+    }
+
 }
 
 @media(max-width:768px){
@@ -203,31 +159,21 @@ footer{
         line-height:1.6;
     }
 
-    figure img{
-        width: 100%;
+    #Key-Features-list{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #key-features li{
+        width:100%;
+        min-height:200px;
+        margin:0;
     }
 
     figure img{
-    max-width: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3 ease;
-    box-shadow: 5px 5px 20px #0D1B2A;
-    object-fit: cover;
-    height: 300px;
-    } 
-    
-    #Students-Data table{
-    border: 3px solid #1b263b;
-    gap: 10px;  
-    width: 100%;
+        width:100%;
     }
 
-    #Students-Data th{
-        border: 3px solid #1b263b;
-        text-align: center;
-}
 }
 
 @media (max-width:480px){
@@ -244,10 +190,10 @@ footer{
         font-size:1.5rem;
     }
 
-    /* #key-features li{
+    #key-features li{
         min-height:180px;
         font-size:1rem;
-    } */
+    }
 
     footer{
         font-size:1rem;

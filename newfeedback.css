@@ -62,10 +62,37 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
    
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"]
+{
+    width: 60%;
+    height: 4vh;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2.5vh, 1.5rem);
+    text-align: center;
+}
+
+select {
+    width: 60%;
+    height: 4vh;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2.5vh, 1.5rem);
+    text-align: center;
+}
+
+input[type="radio"]{
+    width: 30px;
+    height: 20px;
+}
 
 section{
     border: 4px solid #1b263b;
@@ -77,89 +104,58 @@ section{
     border-radius: 15px;
 }
 
-/* figure style */
 
-figure img{
-    max-width: 500px;
-    display: block;
+
+textarea{
+    width: 60%;
+    height: 4vh;
     margin: 0 auto;
-    transition: transform 0.3 ease;
-    box-shadow: 5px 5px 20px #0D1B2A;
-    height:400px;
-    width:300px;
-    object-fit: cover;
-    border-radius: 50px;
-} 
-
-figure img:hover{
-    transform: translateY(-3px);
-  
 }
 
-figcaption{
-    margin-top: 10px;
-    font-size: clamp(1.5rem, 2vw, 1rem);
+.t-c-grp{
+     display: flex;
+     flex-direction: column;
+     align-items: justify;
+     text-align: justify;
 }
 
-/* Student's data design */
-#Students-Data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.t-c-opt{
+    font-size: clamp(1.3rem, 2vh, 1.9rem);
 }
 
-#Students-Data table{
-    gap: 10px;  
-    width: 40%;
-    box-shadow: 8px 7px 10px rgb(55, 6, 6);
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 3px solid rgb(141, 24, 24);
-}
-
-#Students-Data th{
-  
-   text-align: center;
-   padding: 10px;
-   
-}
-
-#Students-Data td{
-    text-align: justify;
-    padding: 10px;   
+button{
+    height: 4vh;
+    width: 20%;
+    font-size: clamp(1rem, 2vh, 1.5rem);
+    box-shadow: 5px 5px 10px #0D1B2A;
+    background-color: #1b263b;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
 }
 
 
-/* skill section design */
-#Skills ul{
-    list-style-type: none;
-}
 
-#About-Me p{
-    text-align: justify;
-}
-
-#Contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#Contact a{
-    color: rgb(141, 24, 24);
-    font-weight: 600;
-}
-
-/*footer*/
 footer{
+    margin-top: 20px;
     background-color: #0D1B2A;
     padding: 20px;
     color: white;
     text-align: center;
     font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 100;
+}
+
+@media (max-width:992px){
+
+    #Key-Features-list{
+        gap:25px;
+    }
+
+    #key-features li{
+        width:45%;
+    }
+
 }
 
 @media(max-width:768px){
@@ -203,31 +199,21 @@ footer{
         line-height:1.6;
     }
 
-    figure img{
-        width: 100%;
+    #Key-Features-list{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #key-features li{
+        width:100%;
+        min-height:200px;
+        margin:0;
     }
 
     figure img{
-    max-width: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3 ease;
-    box-shadow: 5px 5px 20px #0D1B2A;
-    object-fit: cover;
-    height: 300px;
-    } 
-    
-    #Students-Data table{
-    border: 3px solid #1b263b;
-    gap: 10px;  
-    width: 100%;
+        width:100%;
     }
 
-    #Students-Data th{
-        border: 3px solid #1b263b;
-        text-align: center;
-}
 }
 
 @media (max-width:480px){
@@ -244,10 +230,10 @@ footer{
         font-size:1.5rem;
     }
 
-    /* #key-features li{
+    #key-features li{
         min-height:180px;
         font-size:1rem;
-    } */
+    }
 
     footer{
         font-size:1rem;
