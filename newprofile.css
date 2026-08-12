@@ -112,12 +112,12 @@ figcaption{
 #Students-Data table{
     gap: 10px;  
     width: 40%;
-    box-shadow: 8px 7px 10px rgb(55, 6, 6);
+    box-shadow: 8px 7px 13px rgb(6, 26, 55);
     margin-bottom: 20px;
     border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
-    border: 3px solid rgb(141, 24, 24);
+    border: 1px solid rgb(4, 8, 54);
 }
 
 #Students-Data th{
